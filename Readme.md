@@ -4,6 +4,14 @@
 
 We hav Superstore dataset with following columns
 
+####################################################################
+####################################################################
+
+                            1. Basic EDA
+
+####################################################################
+####################################################################
+
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 9994 entries, 0 to 9993
 Data columns (total 21 columns):
@@ -75,5 +83,29 @@ Country is one so this is only domestic sales data.
 City count is more than 500, need to check if spelling error
 City is 531 and postal code is 631, need to check
 We have 1862 product id and 1841 product, some product may have same name but have different IDs.
+
+
+Check unique values of each categorycal column,
+
+Ship Mode has unique values: ['First Class' 'Standard Class' 'Second Class' 'Same Day']
+
+Segment has unique values: ['Consumer' 'Home Office' 'Corporate']
+
+Category has unique values: ['Furniture' 'Office Supplies' 'Technology']
+
+Sub-Category has unique values: ['Bookcases' 'Tables' 'Paper' 'Phones' 'Chairs' 'Fasteners' 'Furnishings'
+ 'Storage' 'Labels' 'Binders' 'Appliances' 'Art' 'Accessories' 'Copiers'
+ 'Envelopes' 'Machines' 'Supplies']
+
+
+We will use below features for our sales forecasting model becoz others are not useful,
+
+['Category', 'Sub-Category', 'Segment', 'Region', 'Ship Mode'] as categorical features 
+
+["Discount"] as numerical features
+
+["Quantity"] as Target feature
+
+
 
 
