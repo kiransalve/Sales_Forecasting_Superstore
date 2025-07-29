@@ -64,16 +64,16 @@ Discount           12
 Profit           7287
 Month              48
 
-and found that
+and found that,
 
-<p style="color:yellow">There are 9,994 total transaction in 48 months, means in 4 years.
-<p style="color:yellow">order id less than row id means there are multiple items in one order.
-<p style="color:yellow">Orders dates are 1238 in 1440 days of 4 years, means 202 days have no orders.
-<p style="color:yellow">Ship dates are 1334, more than order date, means one order may be shipped in multiple dates
-<p style="color:yellow">We have 793 customers.
-<p style="color:yellow">Country is one so this is only domestic sales data.
-<p style="color:yellow">City count is more than 500, need to check if spelling error
-<p style="color:yellow">City is 531 and postal code is 631, need to check
-<p style="color:yellow">We have 1862 product id and 1841 product, some product may have same name but have different IDs.
+There are 9,994 total transaction in 48 months, means in 4 years.
+order id less than row id means there are multiple items in one order.
+Orders dates are 1238 in 1440 days of 4 years, means 202 days have no orders.
+Ship dates are 1334, more than order date, means one order may be shipped in multiple dates
+We have 793 customers.
+Country is one so this is only domestic sales data.
+City count is more than 500, need to check if spelling error
+City is 531 and postal code is 631, need to check
+We have 1862 product id and 1841 product, some product may have same name but have different IDs.
 
 
