@@ -130,5 +130,37 @@ We used box plot to detects the outlier
 
 <img width="800" height="400" alt="Quantity" src="https://github.com/user-attachments/assets/fe2ced20-f0c0-47a7-91a0-f138f89a1014" />
 
+```text
+
+Key Observations (Quantity) :
+Median (middle line): Around 3–4 units.
+Interquartile Range (IQR): Between 2 and 8 units.
+Whiskers: Extend roughly from 1 to 9
+Outliers: Values at 10, 11, 12, 13, and 14 are considered outliers (those beyond 1.5 * IQR from Q1 or Q3).
+
+also we have count of outlier as below,
+
+```
+
+<img width="800" height="500" alt="outlier_counts" src="https://github.com/user-attachments/assets/35124c0b-32b1-439a-83bc-7bd51d0c43bc" />
+
+```text
+
+Quantity = 10 is the most frequent outlier with over 55 occurrences
+Quantities 11–14 also appear frequently, though less than 10.
+This suggests these aren't just rare data-entry errors — they're likely real business events.
+
+This means 
+
+Bulk Orders - Some customers may consistently purchase in larger quantities (10+), we need to check customer wise sales
+Promotional Sales - Special offers or discounts encouraging higher quantity buys.
+Seasonal Effects: Specific times (e.g., festivals or end of month) may trigger larger purchases.
+
+due to this we capped the "Quantity" at 9
+
+and create new feature as "high_qty" with two values - "Normal Order" and "High Qty Order"
 
 
+
+
+```
