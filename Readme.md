@@ -126,8 +126,9 @@ and among "Quantity is important as it is what we will predict
 
 We used box plot to detects the outlier
 
+```
+
 <img width="800" height="400" alt="Quantity" src="https://github.com/user-attachments/assets/fe2ced20-f0c0-47a7-91a0-f138f89a1014" />
 
 
 
-```
